@@ -17,8 +17,10 @@ spec:
       - name: tetris
         image: shaikmustafa/mytetrisgame:v2
         ports:
-        - containerPort: 3000   # Use port 3000
-
+        - containerPort: 3000   # Use port 3000        
+        envFrom:
+        - configMapRef:
+            name: tetris-config
 ---
 apiVersion: v1
 kind: Service
