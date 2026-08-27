@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: tetris-config
-data:
-  APP_NAME: "Tetris Game"
-  ENV: "production"
